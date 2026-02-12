@@ -13,7 +13,7 @@
 |01  | Emmet       |Work Flow - Markup & Styling          |
 |02  | HTML        |Strcture  - Hypertext Markup Language |
 |03  | Css         |Look & Fell - Cascading Style Sheets  |
-|04  | Javasacript |Behavior - Programing Languege        |
+|04  | Javascript |Behavior - Programing Languege        |
 
 ![Perry](https://adso3314566-taupe.vercel.app/perry.jpg)
 

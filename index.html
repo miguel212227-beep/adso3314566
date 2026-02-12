@@ -33,6 +33,31 @@
                     font-size: 1.4rem;
                 }
             }
+            menu {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                a:link, a:visited {
+                    background-color: rgb(0, 255, 0);
+                    color: red;
+                    border-radius: 12rem;
+                    padding: 0.6rem;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    span {
+                        background-color: #030303;
+                        color: white;
+                        border-radius: 50%;
+                        font-size: 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+            }
         }
     </style>
 </head>
@@ -42,5 +67,35 @@
     <h1>ADSO3314566</h1>
     <img src="perry.jpg" alt=""">
     <h4>Miguel Garcia</h4>
+    <menu>
+        <a href="01-Html/">
+            <span>01</span>
+            <aside>
+                <h4>Html</h4>
+                <small>Structure - Hypertext Markup Language</small>
+            </aside>
+        </a>
+                <a href="02-Emmet/">
+            <span>02</span>
+            <aside>
+                <h4>Emmet</h4>
+                <small>Structure - Hypertext Markup Language</small>
+            </aside>
+        </a>
+                <a href="03-Css/">
+            <span>03</span>
+            <aside>
+                <h4>Css</h4>
+                <small>Structure - Hypertext Markup Language</small>
+            </aside>
+        </a>
+                <a href="04-Javascript/">
+            <span>04</span>
+            <aside>
+                <h4>Javascript</h4>
+                <small>Structure - Hypertext Markup Language</small>
+            </aside>
+        </a>
+    </menu>
 </main>
 </html>
