@@ -15,7 +15,7 @@
 |03  | Css         |Look & Fell - Cascading Style Sheets  |
 |04  | Javascript |Behavior - Programing Languege        |
 
-![Perry](https://adso3314566-taupe.vercel.app/perry.jpg)
+![Perry](https://adso3314566-taupe.vercel.app//public/imgs/perry.jpg)
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
