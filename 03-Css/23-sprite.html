@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23-Sprite</title>
+    <link rel="stylesheet" href="../src/css/03-CSS.css">
+    <style>
+        div#sprite{
+            background: url(img/anim-sprite.png) no-repeat;
+            height: 256px;
+            margin: 1rem auto;
+            width: 256px;
+        }
+        div#sprite.sp1 { background-position: calc(-256px * 0) 0;}
+        div#sprite.sp2 { background-position: calc(-256px * 1) 0;}
+        div#sprite.sp3 { background-position: calc(-256px * 2) 0;}
+        div#sprite.sp4 { background-position: calc(-256px * 3) 0;}
+        div#sprite.sp5 { background-position: calc(-256px * 4) 0;}
+        div#sprite.sp6 { background-position: calc(-256px * 5) 0;}
+
+        div#nina{
+            background: url(img/fuego.png) no-repeat;
+            height: 256px;
+            margin: 1rem auto;
+            width: 150px;
+        }
+        div#nina.nn1 { background-position: calc(-256px * 0) 0;}
+        div#nina.nn2 { background-position: calc(-256px * 1) 0;}
+        div#nina.nn3 { background-position: calc(-256px * 2) 0;}
+        div#nina.nn4 { background-position: calc(-256px * 3) 0;}
+        div#nina.nn5 { background-position: calc(-256px * 4) 0;}
+        div#nina.nn6 { background-position: calc(-256px * 5) 0;}
+    </style>
+</head>
+<body>
+    <a class="btn-home" href="../03-Css/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+    </a>
+    <main>
+        <header>
+            <h1>23 Sprite</h1>
+            <h2>An image sprite is a collection of images put into a single image.</h2>
+        </header>
+        <section>
+            <h3>Runner</h3>
+            <div id="sprite" class="sp1"></div>
+            <h3>Olo</h3>
+            <div id="nina" class="nn1"></div>
+        </section>
+    </main>
+    <script>
+        const sprite = document.getElementById('sprite')
+        const numSprite = 6
+        let  count = 1
+        setInterval (() => {
+            sprite.className = ''
+            sprite.classList.add('sp'+count)
+            if(count == numSprite) count=1
+            else count++
+        }, 80)
+    </script>
+    <script>
+        const nina = document.getElementById('nina')
+        const numNina = 6
+        let counter = 1
+        setInterval (()=> {
+            nina.className = ''
+            nina.classList.add('nn'+counter)
+            if(counter == numNina) counter=1
+            else counter++
+        }, 60)
+    </script>
+</body>
+</html>

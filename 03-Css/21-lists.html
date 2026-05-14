@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>21-lists</title>
+
+    <!-- MISMA RUTA -->
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+        section.list-examples {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            margin-top: 3rem;
+        }
+
+        /* CONTENEDOR */
+        div.list-box {
+            width: 700px;
+
+            border: 4px solid white;
+            padding: 2rem;
+
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ===================== */
+        /* LIST STYLE */
+        /* ===================== */
+
+        ul.disc-list {
+            list-style: disc inside;
+        }
+
+        ul.circle-list {
+            list-style: circle outside;
+        }
+
+        ul.square-list {
+            list-style: square inside;
+        }
+
+        ol.decimal-list {
+            list-style: decimal;
+        }
+
+        ol.roman-list {
+            list-style: upper-roman;
+        }
+
+        ol.alpha-list {
+            list-style: lower-alpha;
+        }
+
+        /* LISTA PERSONALIZADA */
+        ul.custom-list {
+            list-style: "⭐ ";
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MISMO BOTON -->
+    <a href="../03-css/index.html" class="btn-home">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,
+                58.34a8,8,0,0,1-11.32,11.32l-72-72a8,
+                8,0,0,1,0-11.32l72-72a8,8,0,0,1,
+                11.32,11.32L59.31,120H216A8,8,0,0,1,
+                224,128Z">
+            </path>
+
+        </svg>
+
+    </a>
+
+    <main>
+
+        <header>
+
+            <h1>21 Lists</h1>
+
+            <h2>
+                The list-style property allows you to set all list styles at once.
+            </h2>
+
+        </header>
+
+        <section>
+
+            <section class="list-examples">
+
+                <!-- UNORDERED LISTS -->
+                <div class="list-box">
+
+                    <h3>Unordered Lists:</h3>
+
+                    <ul class="disc-list">
+                        <li>Disc List Style</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+
+                    <ul class="circle-list">
+                        <li>Circle List Style</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+
+                    <ul class="square-list">
+                        <li>Square List Style</li>
+                        <li>NodeJS</li>
+                        <li>MongoDB</li>
+                    </ul>
+
+                </div>
+
+                <!-- ORDERED LISTS -->
+                <div class="list-box">
+
+                    <h3>Ordered Lists:</h3>
+
+                    <ol class="decimal-list">
+                        <li>Decimal List</li>
+                        <li>First</li>
+                        <li>Second</li>
+                    </ol>
+
+                    <ol class="roman-list">
+                        <li>Roman List</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ol>
+
+                    <ol class="alpha-list">
+                        <li>Alphabetic List</li>
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ol>
+
+                </div>
+
+                <!-- CUSTOM LIST -->
+                <div class="list-box">
+
+                    <h3>Custom List Style:</h3>
+
+                    <ul class="custom-list">
+                        <li>Custom Symbol</li>
+                        <li>Typography</li>
+                        <li>Visualization</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

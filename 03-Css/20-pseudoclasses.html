@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>20-Pseudoclasses</title>
+
+    <!-- MISMA RUTA -->
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+        section.pseudo-examples {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            margin-top: 3rem;
+        }
+
+        /* CONTENEDOR */
+        div.example-box {
+            width: 700px;
+
+            border: 4px solid white;
+            padding: 2rem;
+
+            background-color: rgba(255, 255, 255, 0.1);
+
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* ===================== */
+        /* HOVER */
+        /* ===================== */
+
+        button.hover-btn {
+            background-color: crimson;
+
+            color: white;
+
+            border: none;
+
+            padding: 1rem;
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+        }
+
+        button.hover-btn:hover {
+            background-color: royalblue;
+
+            transform: scale(1.05);
+        }
+
+        /* ===================== */
+        /* ACTIVE */
+        /* ===================== */
+
+        button.active-btn {
+            background-color: teal;
+
+            color: white;
+
+            border: none;
+
+            padding: 1rem;
+
+            cursor: pointer;
+        }
+
+        button.active-btn:active {
+            background-color: orange;
+        }
+
+        /* ===================== */
+        /* FOCUS */
+        /* ===================== */
+
+        input.focus-input {
+            padding: 1rem;
+
+            border: 3px solid white;
+
+            outline: none;
+        }
+
+        input.focus-input:focus {
+            border-color: lime;
+            background-color: black;
+            color: white;
+        }
+
+        /* ===================== */
+        /* FIRST-CHILD */
+        /* ===================== */
+
+        ul li:first-child {
+            color: gold;
+            font-weight: bold;
+        }
+
+        /* ===================== */
+        /* LAST-CHILD */
+        /* ===================== */
+
+        ul li:last-child {
+            color: cyan;
+            font-style: italic;
+        }
+
+        /* ===================== */
+        /* NTH-CHILD */
+        /* ===================== */
+
+        ol li:nth-child(2) {
+            color: tomato;
+            font-size: 1.2rem;
+        }
+
+        /* ===================== */
+        /* LINK / VISITED */
+        /* ===================== */
+
+        a.demo-link:link {
+            color: white;
+        }
+
+        a.demo-link:visited {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MISMO BOTON -->
+    <a href="../03-css/index.html" class="btn-home">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,
+                58.34a8,8,0,0,1-11.32,11.32l-72-72a8,
+                8,0,0,1,0-11.32l72-72a8,8,0,0,1,
+                11.32,11.32L59.31,120H216A8,8,0,0,1,
+                224,128Z">
+            </path>
+
+        </svg>
+
+    </a>
+
+    <main>
+
+        <header>
+
+            <h1>20 Pseudoclasses</h1>
+
+            <h2>
+                Pseudo-classes define a special state of an element.
+            </h2>
+
+        </header>
+
+        <section>
+
+            <section class="pseudo-examples">
+
+                <div class="example-box">
+
+                    <!-- HOVER -->
+                    <h3>:hover</h3>
+
+                    <button class="hover-btn">
+                        Hover Me
+                    </button>
+
+                    <!-- ACTIVE -->
+                    <h3>:active</h3>
+
+                    <button class="active-btn">
+                        Click Me
+                    </button>
+
+                    <!-- FOCUS -->
+                    <h3>:focus</h3>
+
+                    <input type="text" class="focus-input" placeholder="Click here">
+
+                    <!-- FIRST CHILD -->
+                    <h3>:first-child</h3>
+
+                    <ul>
+                        <li>First Item</li>
+                        <li>Second Item</li>
+                        <li>Third Item</li>
+                    </ul>
+
+                    <!-- LAST CHILD -->
+                    <h3>:last-child</h3>
+
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                    <!-- NTH CHILD -->
+                    <h3>:nth-child()</h3>
+
+                    <ol>
+                        <li>Item One</li>
+                        <li>Item Two</li>
+                        <li>Item Three</li>
+                    </ol>
+
+                    <!-- LINK / VISITED -->
+                    <h3>:link / :visited</h3>
+
+                    <a href="https://www.google.com" target="_blank" class="demo-link">
+
+                        Visit Google
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

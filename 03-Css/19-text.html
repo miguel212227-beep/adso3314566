@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>19-Text</title>
+
+    <!-- MISMA RUTA -->
+    <link rel="stylesheet" href="../src/css/03-css.css">
+
+    <style>
+        section.text-examples {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            margin-top: 3rem;
+        }
+
+        /* CONTENEDORES */
+        div.text-box {
+            width: 700px;
+
+            border: 4px solid white;
+            padding: 2rem;
+
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ===================== */
+        /* TEXT ALIGN */
+        /* ===================== */
+
+        p.align-left {
+            text-align: left;
+        }
+
+        p.align-center {
+            text-align: center;
+        }
+
+        p.align-right {
+            text-align: right;
+        }
+
+        p.align-justify {
+            text-align: justify;
+        }
+
+        /* ===================== */
+        /* LINE HEIGHT */
+        /* ===================== */
+
+        p.line-height {
+            line-height: 2.5rem;
+        }
+
+        /* ===================== */
+        /* TEXT DECORATION */
+        /* ===================== */
+
+        p.underline {
+            text-decoration: underline;
+        }
+
+        p.overline {
+            text-decoration: overline;
+        }
+
+        p.line-through {
+            text-decoration: line-through;
+        }
+
+        /* ===================== */
+        /* TEXT TRANSFORM */
+        /* ===================== */
+
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+
+        /* ===================== */
+        /* TEXT INDENT */
+        /* ===================== */
+
+        p.indent {
+            text-indent: 60px;
+        }
+
+        /* ===================== */
+        /* WORD / LETTER SPACING */
+        /* ===================== */
+
+        p.word-spacing {
+            word-spacing: 20px;
+        }
+
+        p.letter-spacing {
+            letter-spacing: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MISMO BOTON -->
+    <a href="../03-css/index.html" class="btn-home">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256">
+
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,
+                58.34a8,8,0,0,1-11.32,11.32l-72-72a8,
+                8,0,0,1,0-11.32l72-72a8,8,0,0,1,
+                11.32,11.32L59.31,120H216A8,8,0,0,1,
+                224,128Z">
+            </path>
+
+        </svg>
+
+    </a>
+
+    <main>
+
+        <header>
+
+            <h1>19 Text</h1>
+
+            <h2>
+                CSS text properties control the appearance and formatting of text.
+            </h2>
+
+        </header>
+
+        <section>
+
+            <!-- ALIGN -->
+            <h3>Text Align:</h3>
+
+            <section class="text-examples">
+
+                <div class="text-box">
+
+                    <p class="align-left">
+                        Left Align
+                    </p>
+
+                    <p class="align-center">
+                        Center Align
+                    </p>
+
+                    <p class="align-right">
+                        Right Align
+                    </p>
+
+                    <p class="align-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur voluptas quasi reprehenderit ipsam molestiae.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- LINE HEIGHT -->
+            <h3>Line Height:</h3>
+
+            <section class="text-examples">
+
+                <div class="text-box">
+
+                    <p class="line-height">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>
+                        This text has increased line height.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- DECORATION -->
+            <h3>Text Decoration:</h3>
+
+            <section class="text-examples">
+
+                <div class="text-box">
+
+                    <p class="underline">
+                        Underline Text
+                    </p>
+
+                    <p class="overline">
+                        Overline Text
+                    </p>
+
+                    <p class="line-through">
+                        Line Through Text
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- TRANSFORM -->
+            <h3>Text Transform:</h3>
+
+            <section class="text-examples">
+
+                <div class="text-box">
+
+                    <p class="uppercase">
+                        uppercase text
+                    </p>
+
+                    <p class="lowercase">
+                        LOWERCASE TEXT
+                    </p>
+
+                    <p class="capitalize">
+                        capitalize every word
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- INDENT -->
+            <h3>Text Indent:</h3>
+
+            <section class="text-examples">
+
+                <div class="text-box">
+
+                    <p class="indent">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reprehenderit harum suscipit provident saepe.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- SPACING -->
+            <h3>Spacing (Word / Letter):</h3>
+
+            <section class="text-examples">
+
+                <div class="text-box">
+
+                    <p class="word-spacing">
+                        Word spacing example text
+                    </p>
+
+                    <p class="letter-spacing">
+                        LETTER SPACING
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
