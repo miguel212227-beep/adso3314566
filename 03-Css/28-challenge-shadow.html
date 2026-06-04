@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-New-Selectors</title>
+    <link rel="stylesheet" href="../src/css/03-CSS.css">
+<style>
+        figure.frame {
+        background: #fff;
+        width: calc(50 * 20px);
+        height: calc(50 * 50px);
+        margin: 2rem auto;
+        position: relative;
+        overflow: hidden;
+        transform: scale(0.60);
+        transform-origin: top center;
+    }
+    div.squares {
+        background: url(img/square.png.jpeg) repeat;
+        opacity: 0.4;
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+    }
+
+div.escultura {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(14, 21, 78);
+    box-shadow:
+
+    0px 0px 0 rgb(14, 21, 78),
+    20px 0px 0 rgb(14, 21, 78),
+    40px 0px 0 rgb(14, 21, 78),
+    60px 0px 0 rgb(14, 21, 78);
+
+
+
+    z-index: 1;
+}
+
+</style>
+</head>
+<body>
+<a href="../03-css/" class="btn-home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" viewBox="0 0 256 256">
+        <path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"/>
+    </svg>
+</a>
+<main>
+<header>
+    <h1>28 Challenge</h1>
+
+    <h2>
+        <small>Using box-shadow</small>
+    </h2>
+</header>
+
+<section>
+    <figure class="frame">
+
+        <div class="escultura"></div>
+
+        <div class="squares"></div>
+
+    </figure>
+</section>
+
+</main>
+
+</body>
+</html>
