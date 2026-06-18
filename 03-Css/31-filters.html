@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31-Filters</title>
+    <link rel="stylesheet" href="../src/css/03-CSS.css">
+
+    <style>
+        section{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        article{
+            text-align: center;
+        }
+
+        article h3{
+            margin-bottom: 10px;
+        }
+
+        img{
+            width: 250px;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        img:hover{
+            filter: none;
+            transform: scale(1.05);
+        }
+
+        /* FILTERS */
+
+        .blur{
+            filter: blur(5px);
+        }
+
+        .brightness{
+            filter: brightness(1.5);
+        }
+
+        .contrast{
+            filter: contrast(180%);
+        }
+
+        .saturate{
+            filter: saturate(250%);
+        }
+
+        .grayscale{
+            filter: grayscale(100%);
+        }
+
+        .sepia{
+            filter: sepia(100%);
+        }
+
+        .invert{
+            filter: invert(100%);
+        }
+
+        .opacity{
+            filter: opacity(0.5);
+        }
+
+        .hue{
+            filter: hue-rotate(180deg);
+        }
+
+        .shadow{
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,.8));
+        }
+    </style>
+</head>
+
+<body>
+    <a class="btn-home" href="../03-Css/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path
+                d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z">
+            </path>
+        </svg>
+    </a>
+
+    <main>
+        <header>
+            <h1>31 Filters</h1>
+            <h2>Defines visual effects (like blur and saturation).</h2>
+        </header>
+
+        <section>
+
+            <article>
+                <h3>Blur</h3>
+                <img class="blur" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Brightness</h3>
+                <img class="brightness" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Contrast</h3>
+                <img class="contrast" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Saturate</h3>
+                <img class="saturate" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Grayscale</h3>
+                <img class="grayscale" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Sepia</h3>
+                <img class="sepia" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Invert</h3>
+                <img class="invert" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Opacity</h3>
+                <img class="opacity" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Hue Rotate</h3>
+                <img class="hue" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+            <article>
+                <h3>Drop Shadow</h3>
+                <img class="shadow" src="img/spiderman.jpg" alt="Spider-Man">
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Text-Shadow</title>
+    <link rel="stylesheet" href="../src/css/03-CSS.css">
+    <style>
+        section{
+            background-color: #12091f;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        h3{
+            color: white;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 45px;
+            margin: 20px 0 50px 0;
+            color: white;
+        }
+
+        .basica{
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        }
+
+        .fuerte{
+            text-shadow: 8px 8px 10px rgba(255, 255, 255, 0.9);
+        }
+
+        .glow{
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #de0404,
+                0 0 40px #a855f7,
+                0 0 60px #a855f7;
+        }
+
+        .nitida{
+            text-shadow: 5px 5px 0px #757373;
+        }
+
+        .multiple{
+            text-shadow:
+                2px 2px 0 red,
+                4px 4px 0 orange,
+                6px 6px 0 yellow,
+                8px 8px 0 green,
+                10px 10px 0 blue,
+                12px 12px 0 purple;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="btn-home" href="../03-Css/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path
+                d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z">
+            </path>
+        </svg>
+    </a>
+    <main>
+        <header>
+            <h1>30 Text Shadow</h1>
+            <h2>Adds shadows to text.</h2>
+        </header>
+        <section>
+                <h2 class="basica">Adso</h2>
+                <h2 class="fuerte">Adso</h2>
+                <h2 class="glow">Adso</h2>
+                <h2 class="nitida">Adso</h2>
+                <h2 class="multiple">Adso</h2>
+        </section>
+    </main>
+</body>
+</html>
