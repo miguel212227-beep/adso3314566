@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38-Media-Queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+        * {
+            transition: all 0.5s ease-in;
+        }
+        body {
+            font-family: Poppins;
+            background-color: #003675;
+            color: #fff;
+            main {
+                padding: 4rem;
+                header {
+                    figure.logo {
+                        background: url(img/pepsi01.png) no-repeat center;
+                        height: 354px;
+                        margin: 0 auto;
+                        width: 919px;
+                    }
+                }
+            section {
+                h1 {
+                    text-align: center;
+                    font-size: 2.8rem;
+                    span.md, span.sm {
+                        display: none;
+                    }
+                }
+                p {
+                    margin-block: 4rem;
+                    text-align: justify;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+    }
+    /* Puntos de quiebre */
+    @media (max-width: 1024px) {
+        body main{
+            header {
+                figure.logo {
+                    background: url(img/pepsi02.png) no-repeat center;
+                    height: 370px;
+                    width: 348px;
+                }
+            }
+            section {
+                h1 {
+                    font-size: 2rem;
+                    span.lg, span.sm {
+                        display: none;
+                    }
+                    span.md {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 780px) {
+        body main{
+            header {
+                figure.logo {
+                    background: url(img/pepsi03.png) no-repeat center;
+                    height: 156px;
+                    width: 162px;
+                }
+            }
+            section {
+                h1 {
+                    font-size: 1.2rem;
+                    span.lg, span.md {
+                        display: none;
+                    }
+                    span.sm {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+        <section>
+            <h1>
+                Media Queries
+                <span class="lg">(> 1024px) 🖥️Desktop</span>
+                <span class="md">(< 1024px) 💻Tablet</span>
+                <span class="sm">(< 780px) 📱Mobile</span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quos maiores voluptates, distinctio quas, sequi porro explicabo neque enim, exercitationem suscipit quis magni pariatur! Magni corporis accusantium deleniti vitae quod, perferendis soluta sunt sequi esse cumque. Exercitationem autem quos, repellat vero suscipit praesentium. Id incidunt quod eos in, illum odio, ad velit dignissimos distinctio provident corporis non tempore iusto! Suscipit incidunt eligendi perspiciatis deserunt, eius sit quidem minus quas delectus quibusdam expedita quia iusto iste unde rem non rerum molestias, optio harum consequatur eum voluptas. Ipsa, aliquid reprehenderit explicabo molestiae magni repellendus? Voluptatum ea possimus incidunt minima! Quisquam placeat doloremque reiciendis molestiae laudantium, necessitatibus et! Earum tempora rerum veritatis assumenda, repudiandae quae perferendis harum, culpa nulla aperiam consequatur voluptates minima.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

@@ -7,7 +7,6 @@
     <title>34-Variables</title>
     <link rel="stylesheet" href="../src/css/03-CSS.css">
     <style>
-        /* ===== DECLARACIÓN DE VARIABLES GLOBALES ===== */
         :root {
             --color-primary: #4fc3f7;
             --color-secondary: #ffb74d;
@@ -20,7 +19,6 @@
             --font-family-mono: 'Roboto Mono', monospace;
         }
 
-        /* ===== @FONT-FACE ===== */
         @font-face {
             font-family: 'MiFuentePersonalizada';
             src: url('fonts/mi-fuente.woff2') format('woff2'),
@@ -39,7 +37,6 @@
             font-display: swap;
         }
 
-        /* ===== ESTILOS DE FUENTES ===== */
         .font-poppins {
             font-family: var(--font-family-base);
         }
@@ -76,7 +73,6 @@
             color: var(--color-secondary);
         }
 
-        /* ===== SECCIÓN DE EJERCICIOS (SIN CUADROS) ===== */
         .ejercicio {
             padding: 1rem 0;
             border-bottom: 1px solid var(--color-border);
@@ -145,7 +141,6 @@
         </header>
         <section>
 
-            <!-- 1. VARIABLES GLOBALES -->
             <div class="ejercicio">
                 <div class="code-block">
                     :root {
@@ -159,7 +154,6 @@
                 <p>🔹 Variables declaradas en <strong>:root</strong> para uso global.</p>
             </div>
 
-            <!-- 2. USO DE var() -->
             <div class="ejercicio">
                 <div class="code-block">
                     .elemento {
@@ -174,7 +168,6 @@
                     <strong>--font-family-mono</strong></p>
             </div>
 
-            <!-- 3. DEMOSTRACIÓN PRÁCTICA -->
             <div class="ejercicio">
                 <div class="code-block">
                     /* Cambia el valor en :root y afecta a todo */

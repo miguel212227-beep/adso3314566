@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen Responsive</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            transition:all .5s ease;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#0f172a;
+            color:white;
+        }
+        main{
+            width:90%;
+            margin:0 auto;
+            padding:30px;
+        }
+        .logo{
+            background:url(img/logo-desktop.png) no-repeat center;
+            background-size:contain;
+            width:900px;
+            height:300px;
+            margin:0 auto;
+        }
+        h1{
+            text-align:center;
+            margin:30px 0;
+            font-size:3rem;
+        }
+        .md,
+        .sm{
+            display:none;
+        }
+        .characters{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin:40px 0;
+            flex-wrap:wrap;
+        }
+        .characters img{
+            width:220px;
+            height:300px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+        .info{
+            display:flex;
+            align-items:center;
+            gap:40px;
+            margin:60px 0;
+        }
+        .info img{
+            width:400px;
+            border-radius:15px;
+        }
+        .text{
+            flex:1;
+        }
+        .text h2{
+            margin-bottom:15px;
+            font-size:2rem;
+        }
+        .text p{
+            text-align:justify;
+            line-height:1.8;
+        }
+        .reverse{
+            flex-direction:row-reverse;
+        }
+        @media (max-width:1024px){
+            .logo{
+                background:url(img/logo-tablet.png) no-repeat center;
+                background-size:contain;
+                width:500px;
+                height:250px;
+            }
+            h1{
+                font-size:2rem;
+            }
+            .lg,
+            .sm{
+                display:none;
+            }
+            .md{
+                display:inline;
+            }
+            .characters img{
+                width:180px;
+                height:250px;
+            }
+            .info img{
+                width:300px;
+            }
+            .text h2{
+                font-size:1.6rem;
+            }
+        }
+        @media (max-width:780px){
+            .logo{
+                background:url(img/logo-mobile.png) no-repeat center;
+                background-size:contain;
+                width:250px;
+                height:150px;
+            }
+            h1{
+                font-size:1.3rem;
+            }
+            .lg,
+            .md{
+                display:none;
+            }
+            .sm{
+                display:inline;
+            }
+            .characters{
+                flex-direction:column;
+                align-items:center;
+                gap:20px;
+            }
+            .characters img{
+                width:220px;
+                height:300px;
+            }
+            .info{
+                flex-direction:column;
+                text-align:center;
+            }
+            .reverse{
+                flex-direction:column;
+            }
+            .info img{
+                width:100%;
+                max-width:350px;
+            }
+            .text p{
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo"></div>
+        </header>
+        <section>
+            <h1>
+                Jujutsu Kaisen
+                <span class="lg">
+                    (>1024px) 🖥️ Desktop
+                </span>
+                <span class="md">
+                    (<1024px) 💻 Tablet
+                </span>
+                <span class="sm">
+                    (<780px) 📱 Mobile
+                </span>
+            </h1>
+        </section>
+        <section class="characters">
+            <img src="img/" alt="Yuji Itadori">
+            <img src="img/" alt="Yuta Okkotsu">
+            <img src="img/" alt="Megumi Fushiguro">
+            <img src="img/" alt="Toji Fushiguro">
+        </section>
+        <section class="info">
+            <div class="image">
+                <img src="img/" alt="Ryomen Sukuna">
+            </div>
+            <div class="text">
+                <h2>Ryomen Sukuna</h2>
+                <p>
+                    Conocido como el Rey de las Maldiciones, Sukuna es una de las
+                    entidades más peligrosas del universo de Jujutsu Kaisen.
+                    Su inmenso poder y su personalidad despiadada lo convierten
+                    en una amenaza para cualquier hechicero.
+                </p>
+            </div>
+        </section>
+        <section class="info reverse">
+            <div class="image">
+                <img src="img/" alt="Satoru Gojo">
+            </div>
+            <div class="text">
+                <h2>Satoru Gojo</h2>
+                <p>
+                    Considerado el hechicero más fuerte de la actualidad,
+                    Gojo posee técnicas excepcionales y los legendarios
+                    Seis Ojos. Su misión es formar una nueva generación
+                    de hechiceros capaces de cambiar el mundo.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
